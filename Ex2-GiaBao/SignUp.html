@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Sign up Site</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            section{
+                /* Auto Layout */
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+
+                position: absolute;
+                width: 200px;
+                height: 344px;
+                left: 176px;
+                top: 140px;
+            }
+
+            img{
+                position: static;
+                width: 200px;
+                height: 200px;
+                left: 0px;
+                top: 52px;
+
+                border-radius: 100%;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 140px;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: left;
+                padding: 0px;
+
+                position: static;
+                width: 508px;
+                height: 344px;
+                left: 380.5px;
+                top: 0px;
+
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin: 0px 60px;
+            }
+
+            input{
+
+                position: static;
+                width: 300px;
+                height: 40px;
+                left: 0px;
+                top: 0px;
+
+                border: 1px solid;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 2px 0px;
+            }
+
+            button{
+                
+                position: static;
+                width: 300px;
+                height: 40px;
+
+                /* Property */
+                background-color: cornflowerblue;
+                border: none;
+                border-radius: 14px;
+                color: aliceblue;
+                font-size: 14px;
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 3;
+                flex-grow: 0;
+                margin: 0px 0px;
+            }
+
+            button:hover{
+                background-color: rgb(72, 114, 192);
+            }
+
+            div{
+                position: static;
+                width: 300px;
+                height: 40px;
+                left: 0px;
+                top: 273px;
+
+                flex: none;
+                order: 4;
+                flex-grow: 0;
+                margin: 10px 0px 0px 124px;
+                align-items: center;
+                }
+
+            a{
+                color: rgb(117, 117, 117);
+                text-decoration: none;
+                font-size: 12px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <img src="file:///Users/ngocthanh/Desktop/Learning%20website/Project%202/images/a.png" alt="avatar">
+            <form action="GET">
+                <h4>ĐĂNG KÝ TÀI KHOẢN</h4>
+                <input type="email" placeholder="Nhập email"><br>
+                <input type="password" placeholder="Nhập mật khẩu"><br>
+                <input type="date" placeholder="Nhập ngày sinh"><br>
+                <button type="submit">Tạo tài khoản</button><br>
+                <div>
+                    <a href="file:///Users/ngocthanh/Desktop/Learning%20website/Project%202/SignIn.html">Đăng nhập</a>
+                </div>
+            </form>
+        </section>     
+    </body>
+</html>
