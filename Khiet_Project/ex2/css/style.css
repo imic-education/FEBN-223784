@@ -1,0 +1,182 @@
+
+/* =========================
+=============Default Page=========
+=============================== */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* =========================
+=============SIGN UP=========
+=============================== */
+
+input[placeholder] {
+    margin: 15px 0 0 20%;
+}
+
+form.s_up {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(233, 232, 232);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+
+img.s_up {
+    position: absolute;
+    width: 55px;
+    background-color: rgb(192, 188, 188);
+    margin-left: 60px;
+    margin-top: -23px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgb(150, 148, 148);
+    padding: 2px;
+}
+
+select .s_up {
+    display: block;
+}
+
+label.s_up {
+    float: left;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+input[type="date"].s_up {
+    display: block;
+    margin-top: 10px;
+
+    transform: translate(10%);
+}
+
+select.s_up {
+    display: block;
+    margin-top: 10px;
+    transform: translate(32%);
+}
+
+a.s_up {
+    margin-left: 100px;
+    margin-right: 80px;
+}
+
+
+/* =========================
+=============SIGN IN=========
+=============================== */
+
+form.s_in {
+    background-color: rgb(233, 232, 232);
+    height: 350px;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+
+form img.s_in {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+input[placeholder].s_in {
+    display: block;
+    margin: 5px auto;
+}
+
+a[target="_blank"].s_in {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a[href="http://127.0.0.1:5500/Sign%20up.html"].s_in {
+    margin-top: px;
+    margin-left: 130px;
+    margin-right: 27px;
+}
+
+/* =========================
+=============FORGOT PASSWORD=========
+=============================== */
+
+form.fgpass {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(233, 232, 232);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+
+.row.fgpass{
+    margin-left: 20%;
+}
+
+input[type="submit"].fgpass{
+    margin-right: 20%;
+    float: right;
+    margin-top: 3%;
+}
+
+
+
+/* =========================
+=============PIN CODE=========
+=============================== */
+
+form.f_pcode {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(233, 232, 232);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+
+.row{
+    width: 100%;
+    position: absolute;
+    margin-top: 5%;
+}
+
+label.f_pcode{
+    margin-left: 8%;
+    margin-right: 8%;
+   
+}
+
+input.f_pcode{
+    position: absolute;
+}
+
+input[type="submit"].f_pcode{
+    display: block;
+    margin-left: 75%;
+    margin-top: 5%;
+
+}
+
+
