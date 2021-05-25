@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>sign up</title>
+    </head>
+    <style>
+        :root{
+            box-sizing: border-box;
+        }
+        *,::before,::after {
+            box-sizing: inherit;
+        }
+        h2{
+            width:30%;
+            margin: 0 auto 0.5em auto ;
+            text-align: center;
+            
+        }
+
+        .containter {
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+        .signUpform {
+            width: 30%;
+            min-width: 250px;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 1em 1em;
+            border: 1px solid brown;
+            border-radius: 1em;
+            display: grid;
+            grid-template: "label1 input1 input1"
+                           "label2 input2 input2"
+                           "label3 input3 input3"
+                           "label4 input4 input4"
+                           "label5 input5 input5"
+                           "label6 input6 input6"
+                           "button1 space button2";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(7,auto); 
+             
+        }
+
+        .signUpform>*{
+           
+            margin-bottom:1em;
+            align-self:center;
+        } 
+
+        .signUpform>label {
+            text-align: left;
+            color:red;
+            font-size: 14px;
+            
+        }
+        
+        .signUpform>input{
+            box-sizing: content-box;
+            max-height: 1em;
+            padding:0.1em 0;
+          
+        }
+
+        .signUpform>label[for="userNameInput"] {
+            grid-area: label1;
+            
+           
+        }
+        
+        .signUpform>.userNameInput{
+            grid-area: input1;
+        }
+
+        .signUpform>label[for="teleInput"]{
+            grid-area: label2;
+        }
+
+        .signUpform>.teleInput{
+            grid-area: input2;
+        }
+
+        .signUpform>label[for="DOBinput"]{
+            grid-area: label3;
+        }
+
+        .signUpform> .DOBinput{
+            grid-area: input3;
+            
+        }
+
+        .signUpform> label[for="textIdInput"]{
+            grid-area: label4;
+        }
+        
+        .signUpform> .textIDinput{
+            grid-area: input4;
+        }
+
+        .signUpform> label[for="confirmPsswdInput"]{
+            grid-area: label6;
+        }
+        
+        .signUpform> .confirmPsswdInput{
+            grid-area: input6;
+        }
+
+
+        .signUpform> label[for="psswdInput"]{
+            grid-area: label5;
+        }
+        
+        .signUpform> .psswdInput{
+            grid-area: input5;
+        }
+
+        .signUpform> .signUpLink{
+            grid-area: button1;
+        }
+
+        .signUpform> .signInButton{
+            grid-area: button2;
+        }
+
+
+
+
+    </style>
+    <body>
+        <h2>SIGN UP</h2>
+        <div class="container">
+            <form class="signUpForm" action="SignInPage.html" method="POST">
+                
+                <label for="userNameInput">Name:</label>
+                <input  type="text" 
+                        class="userNameInput" 
+                        name="userName"
+                        maxlength="30" 
+                        size="10">
+
+                <label for="teleInput">Telenumber:</label>
+                <input  type="tel" 
+                        class="teleInput" 
+                        name="tele"
+                        maxlength="30" 
+                        size="10">
+                <label  for="DOBinput">DOB:</label>
+                <input  type="date" 
+                        name="date" 
+                        class="DOBinput">
+                <label  for="">User ID:</label>
+                <input  type="text" 
+                        class="textIdInput" 
+                        name="userID" 
+                        maxlength="20" 
+                        size="10"/>
+                <label  for="psswdInput">Password:</label>
+                <input  type="password" 
+                        class="psswdInput"
+                        name="password" 
+                        maxlength="15"
+                        size="10"/>
+                <label for="confirmPsswdInput">Confirm Password:</label>
+                <input  type="password" 
+                        class="confirmPsswdInput"
+                        name="password" 
+                        maxlength="15"
+                        size="10"/>
+
+                <a class="signUpLink" href="SignInPage.html" target="_blank">Sign up</a>
+                <input class="signInButton" type="submit" title="Sign in">
+            </form>
+            </div>    
+    </body>
+</html>

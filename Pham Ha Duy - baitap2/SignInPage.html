@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Sign in</title>
+        <style>
+            ::root{
+                box-sizing: border-box;
+            }
+            *,::before,::after{
+                box-sizing: inherit;
+            }
+    
+            .container{
+                width: 100%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+
+            }
+            .widgetField{
+                grid-column: 2;
+                padding: 1em;
+                border-radius: 0.5em;
+                min-width: 225px;
+    
+            }
+
+
+            .signInForm > div{
+               display: flex;
+               width: 98%;
+               margin: 0.5em auto;
+               align-items:baseline;
+            }
+            
+            .signInForm> div > input {
+                box-sizing: content-box;
+                width: 1em;
+                padding: 0.1em 0;
+               
+            }
+
+            .row1> label{
+                flex-basis: 40%;
+                flex-grow: 0;
+                text-align: left;
+                color: red;
+                padding-bottom: 0;
+            }
+            .row1> .idInput{
+                flex-basis: 60%;
+                flex-grow: 1;
+            }
+            .row2>label {
+                flex-basis :40%;
+                flex-grow: 0;
+                text-align: left;
+                color: red;
+                padding-bottom: 0;
+            }
+            .row2>.passwordInput{
+                flex-basis: 60%;
+                flex-grow: 1;
+            }
+            .row3>* {
+                text-align: right;
+                flex-basis :40%;
+                flex-grow: 1;
+
+            }
+            .row4>*{
+                flex-basis: 30%;
+                flex-grow: 1;
+            }
+
+            
+
+           </style>
+    </head>
+    <body>
+        <div class="container">
+            <fieldset class="widgetField">
+                <legend>LOGIN</legend>
+                <form class="signInform" action="" method="POST">
+                    <div class="row1">
+                        <label  for="idInput" >User ID:</label> 
+                        <input  type="text" 
+                                class="idInput" 
+                                name="userID" 
+                                size="15"> 
+                    </div>
+                    <div class="row2">
+                        <label  for="passwordInput">Password:</label> 
+                        <input  type="password" 
+                                class="passwordInput" 
+                                name="Password" 
+                                size="15">
+                    </div>
+                    <div class="row3">
+                        <p> </p>
+                        <a  class="forgetPasswordLink" 
+                            href="" 
+                            target="_blank">forget password</a>
+                    </div>
+                    <div class="row4">
+                        <a  class="signUpLink" 
+                            href="signup.html" 
+                            target="_blank">sign up</a> 
+                        <p> </p>
+                        <input  type="submit" 
+                                title="Sign in"> 
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>
